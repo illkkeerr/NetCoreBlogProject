@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogWeb", "BlogWeb\BlogWeb.csproj", "{A3D4DFFD-E125-41EC-8031-9CECCAFAC227}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogEntity", "BlogEntity\BlogEntity.csproj", "{17B5207A-FAE4-4FF2-A6B9-366C5B3D3255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogEntity", "BlogEntity\BlogEntity.csproj", "{17B5207A-FAE4-4FF2-A6B9-366C5B3D3255}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogData", "BlogData\BlogData.csproj", "{38B31EF5-FC9C-4C46-831F-E483D98FA0F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogData", "BlogData\BlogData.csproj", "{38B31EF5-FC9C-4C46-831F-E483D98FA0F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogService", "BlogService\BlogService.csproj", "{F9177CF8-A738-4C50-98E1-62F3B5848D8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogService", "BlogService\BlogService.csproj", "{F9177CF8-A738-4C50-98E1-62F3B5848D8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogCore", "BlogCore\BlogCore.csproj", "{1328FDE9-FE79-4569-B402-97C45B43A13C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogCore", "BlogCore\BlogCore.csproj", "{1328FDE9-FE79-4569-B402-97C45B43A13C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogWebUI", "BlogWebUI\BlogWebUI.csproj", "{7E20013A-2C38-42B0-B977-36B2B1C11B25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A3D4DFFD-E125-41EC-8031-9CECCAFAC227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3D4DFFD-E125-41EC-8031-9CECCAFAC227}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3D4DFFD-E125-41EC-8031-9CECCAFAC227}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3D4DFFD-E125-41EC-8031-9CECCAFAC227}.Release|Any CPU.Build.0 = Release|Any CPU
 		{17B5207A-FAE4-4FF2-A6B9-366C5B3D3255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{17B5207A-FAE4-4FF2-A6B9-366C5B3D3255}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17B5207A-FAE4-4FF2-A6B9-366C5B3D3255}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{1328FDE9-FE79-4569-B402-97C45B43A13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1328FDE9-FE79-4569-B402-97C45B43A13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1328FDE9-FE79-4569-B402-97C45B43A13C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E20013A-2C38-42B0-B977-36B2B1C11B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E20013A-2C38-42B0-B977-36B2B1C11B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E20013A-2C38-42B0-B977-36B2B1C11B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E20013A-2C38-42B0-B977-36B2B1C11B25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
