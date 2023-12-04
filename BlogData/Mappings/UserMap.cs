@@ -2,11 +2,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BlogData.Mappings
 {
@@ -53,15 +48,16 @@ namespace BlogData.Mappings
 			{
 				Id = Guid.Parse("70D1ACAE-20A4-41BF-A054-A7B9B8B4EA5F"),
 				UserName = "superadmin@gmail.com",
-				NormalizedUserName = "superadmin@gmail.com".ToUpper(),
+				NormalizedUserName = "SUPERADMIN@GMAIL.COM",
 				Email = "superadmin@gmail.com",
-				NormalizedEmail = "superadmin@gmail.com".ToUpper(),
+				NormalizedEmail = "SUPERADMIN@GMAIL.COM",
 				PhoneNumber = "+05389999999",
 				FirstName = "İlker",
 				LastName = "Şenel",
 				PhoneNumberConfirmed = true,
 				EmailConfirmed = true,
 				SecurityStamp = Guid.NewGuid().ToString(),
+				ImageId= Guid.Parse("3F2E9ACB-6AE5-47D0-9D08-A24120068307"),
 			};
 			superadmin.PasswordHash = CreatePasswordHash(superadmin, "123456");
 
@@ -69,15 +65,16 @@ namespace BlogData.Mappings
 			{
 				Id = Guid.Parse("DBB6F4E2-16E7-4F92-908F-BBEE39C524F9"),
 				UserName = "admin@gmail.com",
-				NormalizedUserName = "admin@gmail.com".ToUpper(),
+				NormalizedUserName = "ADMIN@GMAIL.COM",
 				Email = "admin@gmail.com",
-				NormalizedEmail = "admin@gmail.com".ToUpper(),
+				NormalizedEmail = "ADMIN@GMAIL.COM",
 				PhoneNumber = "+05388888888",
 				FirstName = "Ahmet",
 				LastName = "Şenel",
 				PhoneNumberConfirmed = false,
 				EmailConfirmed = false,
 				SecurityStamp = Guid.NewGuid().ToString(),
+				ImageId= Guid.Parse("DC03ADDB-368F-467D-B9EE-44B3FF55690C"),
 			};
 			admin.PasswordHash = CreatePasswordHash(admin, "123456");
 

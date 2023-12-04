@@ -10,10 +10,11 @@ namespace BlogService.Extensions
 	{
 		public static IServiceCollection LoadServiceLayerExtension(this IServiceCollection services, IConfiguration config)
 		{
-			var assembly=Assembly.GetExecutingAssembly();
+			var assembly = Assembly.GetExecutingAssembly();
 			services.AddAutoMapper(assembly);
 
-			services.AddScoped<IArticleService,ArticleService>();
+			services.AddScoped<IArticleService, ArticleService>();
+			services.AddScoped<ICategoryService, CategoryService>();
 			return services;
 		}
 	}
