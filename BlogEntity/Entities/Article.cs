@@ -4,6 +4,18 @@ namespace BlogEntity.Entities
 {
 	public class Article : EntityBase
 	{
+		public Article()
+		{
+
+		}
+		public Article(string title,string content,Guid userId,Guid categoryId,Guid imageId)
+		{
+			Title= title;
+			Content= content;
+			UserId= userId;
+			CategoryId= categoryId;
+			ImageId= imageId;
+		}
 
 		public string Title { get; set; }
 		public string Content { get; set; }

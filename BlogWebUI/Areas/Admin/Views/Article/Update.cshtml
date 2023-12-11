@@ -1,7 +1,8 @@
-﻿@{
-	ViewData["Title"] = "Add";
+﻿
+@{
+    ViewData["Title"] = "Update";
 }
-@model ArticleAddDto
+@model ArticleUpdateDto
 
 <div class="container-xxl flex-grow-1 container-p-y">
 	<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Makale Yönetimi /</span> Makale Ekle</h4>
@@ -10,8 +11,9 @@
 		<div class="col-md-12">
 			<div class="card mb-4">
 				<h5 class="card-header">Default</h5>
-				<form asp-controller="Article" asp-action="Add" method="post" enctype="multipart/form-data">
+				<form asp-controller="Article" asp-action="Update" method="post" enctype="multipart/form-data">
 					<div class="card-body">
+						<input type="hidden" asp-for="Id"  />
 						<div class="form-group">
 							<label asp-for="CategoryId">Kategori</label>
 							<select id="categoryList" class="form-control" asp-for="CategoryId" asp-items="@(new SelectList(Model.Categories,"Id","Name"))"></select>
@@ -42,5 +44,6 @@
 
 
 </div>
+
 
 
